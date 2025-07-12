@@ -153,7 +153,7 @@ const Experience = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    GPA: 3.85/4. Focusing on advanced AI/ML research and applications.
+                    GPA: 3.85/4. Focusing on advanced LLMs, AI Agents, and MLOps.
                   </p>
                 </CardContent>
               </Card>

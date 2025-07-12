@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Zap,
       title: 'Research & Innovation',
-      description: 'Published research in multimodal AI and continuously exploring cutting-edge technologies.'
+      description: 'Published research in multimodal emotion recognition.'
     }
   ];
 
