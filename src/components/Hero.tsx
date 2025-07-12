@@ -25,12 +25,12 @@ const Hero = () => {
           
           {/* Name */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text animate-fade-in" style={{ animationDelay: '0.4s' }}>
-            Your Name
+            Pragnya Suresh
           </h1>
           
           {/* Professional Titles */}
           <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            {['Full Stack Developer', 'UI/UX Designer', 'Problem Solver'].map((title, index) => (
+            {['Machine Learning Engineer', 'AI/ML Specialist', 'MLOps Expert'].map((title, index) => (
               <span key={index} className="tech-tag">
                 {title}
               </span>
@@ -39,8 +39,8 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            I'm a passionate developer who loves creating beautiful, functional web applications. 
-            I specialize in modern technologies and always strive to deliver exceptional user experiences.
+            Machine Learning Engineer with 4+ years of experience building and deploying ML and GenAI systems at scale. 
+            Skilled in LLM fine-tuning, NLP pipelines, and end-to-end MLOps. Currently pursuing MS in Computer Science (AI) at USC.
           </p>
           
           {/* CTA Buttons */}

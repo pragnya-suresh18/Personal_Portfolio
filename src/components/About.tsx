@@ -5,18 +5,18 @@ const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: 'Clean Code',
-      description: 'Writing maintainable, efficient code with modern best practices and design patterns.'
+      title: 'ML & AI Expertise',
+      description: 'Building scalable ML systems with LLM fine-tuning, RAG pipelines, and advanced NLP techniques.'
     },
     {
       icon: Palette,
-      title: 'Design Focus',
-      description: 'Creating beautiful, intuitive interfaces that provide exceptional user experiences.'
+      title: 'MLOps & Deployment',
+      description: 'End-to-end ML lifecycle management with Docker, Kubernetes, and cloud platforms (AWS, GCP).'
     },
     {
       icon: Zap,
-      title: 'Performance',
-      description: 'Building fast, optimized applications that scale and perform under pressure.'
+      title: 'Research & Innovation',
+      description: 'Published research in multimodal AI and continuously exploring cutting-edge technologies.'
     }
   ];
 
@@ -38,26 +38,26 @@ const About = () => {
             {/* Personal Story */}
             <div className="space-y-6">
               <h3 className="text-2xl font-semibold text-foreground">
-                Building the Future, One Line at a Time
+                Transforming Ideas into AI-Powered Solutions
               </h3>
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm a dedicated software developer with a passion for creating innovative solutions 
-                  that solve real-world problems. My journey began with curiosity about how things work, 
-                  and it has evolved into a career focused on building meaningful digital experiences.
+                  I'm a Machine Learning Engineer with 4+ years of experience building and deploying ML and GenAI systems at scale. 
+                  My journey began at Ushur, where I progressed from intern to Manager - Data Science, leading ML initiatives 
+                  and developing AI solutions that drive real business impact.
                 </p>
                 
                 <p>
-                  With expertise in modern web technologies, I specialize in creating responsive, 
-                  user-friendly applications that not only look great but perform exceptionally. 
-                  I believe in writing clean, maintainable code and staying current with industry best practices.
+                  Currently pursuing my Master's in Computer Science (AI) at USC (GPA: 3.85), I specialize in LLM fine-tuning, 
+                  RAG pipelines, and MLOps. I've built systems serving 10K+ queries/day, contributed to $1M+ in revenue, 
+                  and led the development of AI Studio - a no-code ML platform that accelerated deployment from weeks to days.
                 </p>
                 
                 <p>
-                  When I'm not coding, you can find me exploring new technologies, contributing to 
-                  open-source projects, or sharing knowledge with the developer community. I'm always 
-                  eager to take on new challenges and collaborate on exciting projects.
+                  Beyond my core ML expertise, I have full-stack development experience with Angular, TypeScript, and Node.js. 
+                  I'm passionate about bridging the gap between research and production, creating scalable AI solutions 
+                  that solve real-world problems.
                 </p>
               </div>
             </div>
@@ -89,10 +89,10 @@ const About = () => {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: '3+', label: 'Years Experience' },
-              { number: '50+', label: 'Projects Completed' },
-              { number: '20+', label: 'Technologies' },
-              { number: '100%', label: 'Client Satisfaction' }
+              { number: '4+', label: 'Years ML Experience' },
+              { number: '10K+', label: 'Daily Queries Served' },
+              { number: '3+', label: 'LLMs Fine-tuned' },
+              { number: '$1M+', label: 'Revenue Impact' }
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">

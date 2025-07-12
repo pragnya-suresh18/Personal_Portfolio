@@ -4,60 +4,60 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const Experience = () => {
   const experiences = [
     {
-      title: 'Senior Frontend Developer',
-      company: 'Tech Innovations Inc.',
+      title: 'Manager - Data Science',
+      company: 'Ushur',
       type: 'Full-time',
-      location: 'San Francisco, CA',
-      duration: 'Jan 2023 - Present',
+      location: 'Bengaluru, Karnataka',
+      duration: 'Jun 2023 - Dec 2024',
       description: [
-        'Led development of a React-based dashboard serving 100K+ users',
-        'Improved application performance by 40% through code optimization',
-        'Mentored junior developers and established coding standards',
-        'Collaborated with design team to implement new UI/UX patterns'
+        'Built and deployed a Retrieval-Augmented Generation (RAG) pipeline for healthcare chatbot serving 10K+ queries/day with 25% engagement boost',
+        'Designed and implemented scalable AI solutions by fine-tuning open-source LLMs (Llama 2, Mistral, Flan) for 3+ large enterprise clients',
+        'Led development of AI Studio, a no-code ML platform for model lifecycle management with MLOps pipelines using AWS, Docker, Kubernetes, and MLflow',
+        'Cut deployment time from 2 weeks to 2 days and accelerated adoption across enterprise use cases'
       ],
-      technologies: ['React', 'TypeScript', 'Next.js', 'GraphQL', 'AWS']
+      technologies: ['Python', 'LangChain', 'Hugging Face', 'AWS', 'Docker', 'Kubernetes', 'MLflow', 'RAG']
     },
     {
-      title: 'Full Stack Developer',
-      company: 'Digital Solutions LLC',
+      title: 'Staff Data Scientist',
+      company: 'Ushur',
       type: 'Full-time',
-      location: 'Austin, TX',
-      duration: 'Jun 2021 - Dec 2022',
+      location: 'Bengaluru, Karnataka',
+      duration: 'Jun 2022 - Jun 2023',
       description: [
-        'Developed and maintained multiple client-facing web applications',
-        'Built RESTful APIs using Node.js and Express.js',
-        'Implemented automated testing strategies increasing code coverage to 85%',
-        'Worked in Agile environment with cross-functional teams'
+        'Developed a data extraction pipeline leveraging novel ontology-based approach with 30% accuracy improvement for processing unstructured email data',
+        'Directly contributed to $1M in revenue through improved data processing capabilities',
+        'Architected and deployed FastAPI server handling 100+ asynchronous requests per second for operations like skill visualization, model training, and analysis',
+        'Trained models using BERT and Sentence Transformers to generate embeddings for topic modeling and classification tasks'
       ],
-      technologies: ['React', 'Node.js', 'MongoDB', 'Docker', 'Jest']
+      technologies: ['Python', 'BERT', 'Sentence Transformers', 'FastAPI', 'NLP', 'Topic Modeling']
     },
     {
-      title: 'Junior Web Developer',
-      company: 'StartUp Ventures',
+      title: 'Data Science Engineer',
+      company: 'Ushur',
       type: 'Full-time',
-      location: 'Remote',
-      duration: 'Aug 2020 - May 2021',
+      location: 'Bengaluru, Karnataka',
+      duration: 'Jul 2020 - Jun 2022',
       description: [
-        'Created responsive web applications using modern JavaScript frameworks',
-        'Collaborated with designers to translate mockups into functional interfaces',
-        'Participated in code reviews and contributed to team knowledge sharing',
-        'Maintained and updated existing codebase for legacy applications'
+        'Engineered robust text preprocessing and feature extraction pipelines to support classification models across 10+ production use cases',
+        'Created an interactive EDA tool using Streamlit, Pandas, NumPy, and Matplotlib to analyze complex datasets',
+        'Uncovered 10+ actionable insights that informed data-driven decisions across multiple teams',
+        'Achieved over 70% KPI success across NLP projects by aligning modeling pipelines with business goals'
       ],
-      technologies: ['JavaScript', 'Vue.js', 'CSS3', 'PHP', 'MySQL']
+      technologies: ['Python', 'Streamlit', 'Pandas', 'NumPy', 'Matplotlib', 'NLP', 'Feature Engineering']
     },
     {
-      title: 'Frontend Developer Intern',
-      company: 'Creative Agency Co.',
+      title: 'Data Science Intern',
+      company: 'Ushur',
       type: 'Internship',
-      location: 'New York, NY',
-      duration: 'Jun 2020 - Aug 2020',
+      location: 'Bengaluru, Karnataka',
+      duration: 'Jan 2020 - Jun 2020',
       description: [
-        'Assisted in developing marketing websites for various clients',
-        'Learned modern web development practices and tools',
-        'Contributed to the company\'s internal component library',
-        'Gained experience in client communication and project management'
+        'Designed a multi-language PII data anonymizer using Named Entity Recognition (NER), regular expressions, and language-specific tokenization',
+        'Improved processing efficiency with multiprocessing, reducing runtime for large datasets by 40%',
+        'Built reusable NLP libraries using spaCy, NLTK, and regex for scalable preprocessing, tokenization, and pattern extraction',
+        'Implemented an SFTP watch tool that automated ingestion of ~50 files/day and triggered downstream transformation workflows'
       ],
-      technologies: ['HTML5', 'CSS3', 'JavaScript', 'Webpack', 'SASS']
+      technologies: ['Python', 'spaCy', 'NLTK', 'NER', 'Regex', 'Multiprocessing', 'SFTP']
     }
   ];
 
@@ -71,7 +71,7 @@ const Experience = () => {
               Professional Experience
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              My journey in the world of software development
+              4+ years of building and deploying ML systems at scale
             </p>
           </div>
 
@@ -143,29 +143,29 @@ const Experience = () => {
           {/* Education Section */}
           <div className="mt-20">
             <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
-              Education & Certifications
+              Education & Publications
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-lg">Bachelor of Computer Science</CardTitle>
-                  <CardDescription>University of Technology • 2016-2020</CardDescription>
+                  <CardTitle className="text-lg">Master's, Computer Science (AI)</CardTitle>
+                  <CardDescription>University of Southern California • Jan 2025 - Dec 2026</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Graduated with honors. Focused on software engineering, algorithms, and web development.
+                    GPA: 3.85/4. Focusing on advanced AI/ML research and applications.
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-lg">AWS Certified Developer</CardTitle>
-                  <CardDescription>Amazon Web Services • 2022</CardDescription>
+                  <CardTitle className="text-lg">B.Tech, Computer Science</CardTitle>
+                  <CardDescription>PES University • Aug 2016 - May 2020</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    Certified in developing and maintaining applications on AWS platform.
+                    GPA: 9.29/10. Data Science Specialization. Published research in multimodal emotion recognition.
                   </p>
                 </CardContent>
               </Card>

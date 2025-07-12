@@ -6,58 +6,64 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
-      title: 'E-Commerce Platform',
-      description: 'A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, shopping cart, and payment processing.',
+      title: 'Artist Search & Discovery Platform',
+      description: 'A responsive, full-stack web application for searching, exploring, and favoriting artists using the Artsy API. Features JWT authentication, Angular frontend, Node.js backend, and Google Cloud deployment.',
       image: '/api/placeholder/400/250',
-      technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
-      liveUrl: '#',
+      technologies: ['Angular', 'Node.js', 'Express', 'TypeScript', 'Bootstrap', 'MongoDB Atlas', 'JWT Auth', 'Google Cloud Run'],
+      liveUrl: 'https://artsy3-567555845604.us-central1.run.app/search',
       githubUrl: '#',
-      featured: true
+      featured: true,
+      highlights: ['Full-featured auth flow with secure sessions', 'Dynamic Artsy API integration', 'Favorites with real-time updates', 'Deployed on Google Cloud Platform']
     },
     {
-      title: 'Task Management App',
-      description: 'A collaborative project management tool with real-time updates, drag-and-drop functionality, and team collaboration features built with React and Firebase.',
+      title: 'Healthcare RAG Chatbot',
+      description: 'Built and deployed a Retrieval-Augmented Generation pipeline for healthcare chatbot serving 10K+ queries/day, boosting user engagement by 25% with fine-tuned LLMs.',
       image: '/api/placeholder/400/250',
-      technologies: ['React', 'Firebase', 'TypeScript', 'Material-UI'],
+      technologies: ['Python', 'LangChain', 'Hugging Face', 'Vector DBs', 'FastAPI', 'AWS'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: true
+      featured: true,
+      highlights: ['10K+ daily queries processed', '25% boost in user engagement', 'Fine-tuned Llama 2 and Mistral models', 'Production-ready healthcare solution']
     },
     {
-      title: 'Weather Dashboard',
-      description: 'A responsive weather application that provides current conditions and forecasts with interactive charts and geolocation support.',
+      title: 'AI Studio - No-Code ML Platform',
+      description: 'Led development of a no-code ML platform for model lifecycle management. Built MLOps pipelines that cut deployment time from 2 weeks to 2 days.',
       image: '/api/placeholder/400/250',
-      technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'CSS3'],
+      technologies: ['Python', 'Docker', 'Kubernetes', 'MLflow', 'AWS', 'FastAPI'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: false
+      featured: false,
+      highlights: ['Reduced deployment time by 85%', 'Enterprise adoption across multiple use cases']
     },
     {
-      title: 'Portfolio Website',
-      description: 'A modern, responsive portfolio website built with React and TypeScript, featuring smooth animations and optimized performance.',
+      title: 'Data Extraction Pipeline',
+      description: 'Developed an ontology-based data extraction pipeline with 30% accuracy improvement for processing unstructured email data, contributing to $1M in revenue.',
       image: '/api/placeholder/400/250',
-      technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      technologies: ['Python', 'NLP', 'BERT', 'Sentence Transformers', 'FastAPI'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: false
+      featured: false,
+      highlights: ['$1M revenue contribution', '30% accuracy improvement', '100+ async requests/second']
     },
     {
-      title: 'Social Media Dashboard',
-      description: 'An analytics dashboard for social media management with data visualization, post scheduling, and performance tracking.',
+      title: 'Multi-Language PII Anonymizer',
+      description: 'Designed a multi-language PII data anonymizer using NER and regex, improving processing efficiency by 40% with multiprocessing optimization.',
       image: '/api/placeholder/400/250',
-      technologies: ['Next.js', 'PostgreSQL', 'Prisma', 'Recharts'],
+      technologies: ['Python', 'spaCy', 'NLTK', 'NER', 'Multiprocessing'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: false
+      featured: false,
+      highlights: ['40% runtime reduction', 'Multi-language support', 'Automated file processing']
     },
     {
-      title: 'Learning Management System',
-      description: 'A comprehensive LMS platform with video streaming, progress tracking, quizzes, and course management capabilities.',
+      title: 'Contextual Emotion Recognition',
+      description: 'Research project on multimodal emotion recognition in dyadic conversations using text, audio, and video data. Published in Springer 2020.',
       image: '/api/placeholder/400/250',
-      technologies: ['React', 'Express.js', 'MongoDB', 'AWS S3'],
+      technologies: ['Python', 'Deep Learning', 'Multimodal AI', 'Research'],
       liveUrl: '#',
       githubUrl: '#',
-      featured: false
+      featured: false,
+      highlights: ['Published in Springer 2020', 'Novel multimodal approach', 'Dyadic conversation analysis']
     }
   ];
 
@@ -107,6 +113,19 @@ const Projects = () => {
                 </CardHeader>
                 
                 <CardContent>
+                  {project.highlights && (
+                    <div className="mb-4">
+                      <h4 className="text-sm font-semibold mb-2 text-foreground">Key Achievements:</h4>
+                      <ul className="text-xs text-muted-foreground space-y-1">
+                        {project.highlights.map((highlight, idx) => (
+                          <li key={idx} className="flex items-center gap-2">
+                            <div className="w-1 h-1 bg-primary rounded-full"></div>
+                            {highlight}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="tech-tag text-xs">

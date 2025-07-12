@@ -3,31 +3,50 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'Frontend Development',
+      title: 'Machine Learning & AI',
       skills: [
-        'React', 'TypeScript', 'Next.js', 'Vue.js', 'JavaScript',
-        'HTML5', 'CSS3', 'Tailwind CSS', 'SASS', 'Redux'
+        { name: 'Python', logo: '🐍' },
+        { name: 'PyTorch', logo: '🔥' },
+        { name: 'Scikit-learn', logo: '🧬' },
+        { name: 'Hugging Face', logo: '🤗' },
+        { name: 'LangChain', logo: '🦜' },
+        { name: 'Transformers', logo: '🤖' },
+        { name: 'BERT', logo: '📝' },
+        { name: 'Pandas', logo: '🐼' },
+        { name: 'NumPy', logo: '🔢' }
       ]
     },
     {
-      title: 'Backend Development',
+      title: 'Cloud & MLOps',
       skills: [
-        'Node.js', 'Express.js', 'Python', 'Django', 'FastAPI',
-        'PostgreSQL', 'MongoDB', 'Redis', 'GraphQL', 'REST APIs'
+        { name: 'AWS', logo: '☁️' },
+        { name: 'GCP', logo: '🌥️' },
+        { name: 'Docker', logo: '🐳' },
+        { name: 'Kubernetes', logo: '⚓' },
+        { name: 'MLFlow', logo: '📊' },
+        { name: 'CI/CD', logo: '🔄' },
+        { name: 'Git', logo: '📋' }
       ]
     },
     {
-      title: 'DevOps & Tools',
+      title: 'Backend & APIs',
       skills: [
-        'Git', 'Docker', 'AWS', 'Vercel', 'GitHub Actions',
-        'Jest', 'Cypress', 'Webpack', 'Vite', 'Linux'
+        { name: 'FastAPI', logo: '⚡' },
+        { name: 'Flask', logo: '🌶️' },
+        { name: 'REST APIs', logo: '🔗' },
+        { name: 'Microservices', logo: '🏗️' },
+        { name: 'MongoDB', logo: '🍃' },
+        { name: 'Vector DBs', logo: '🗂️' }
       ]
     },
     {
-      title: 'Design & Others',
+      title: 'Frontend & Full Stack',
       skills: [
-        'Figma', 'Adobe XD', 'UI/UX Design', 'Responsive Design',
-        'Accessibility', 'SEO', 'Performance Optimization', 'Agile'
+        { name: 'Angular', logo: '🅰️' },
+        { name: 'TypeScript', logo: '📘' },
+        { name: 'Node.js', logo: '💚' },
+        { name: 'Bootstrap', logo: '💜' },
+        { name: 'Express', logo: '🚂' }
       ]
     }
   ];
@@ -42,7 +61,7 @@ const Skills = () => {
               Skills & Technologies
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive toolkit for building modern web applications
+              ML/AI expertise with full-stack development capabilities
             </p>
           </div>
 
@@ -64,12 +83,13 @@ const Skills = () => {
                     {category.skills.map((skill, skillIndex) => (
                       <span 
                         key={skillIndex} 
-                        className="tech-tag"
+                        className="tech-tag flex items-center gap-2"
                         style={{ 
                           animationDelay: `${(categoryIndex * 100) + (skillIndex * 50)}ms` 
                         }}
                       >
-                        {skill}
+                        <span className="text-lg">{skill.logo}</span>
+                        {skill.name}
                       </span>
                     ))}
                   </div>
@@ -85,14 +105,19 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                'Machine Learning', 'WebAssembly', 'Three.js', 'Rust', 
-                'Kubernetes', 'Microservices', 'Blockchain', 'AI/ML'
+                { name: 'Advanced NLP', logo: '🧠' },
+                { name: 'RAG Systems', logo: '🔍' },
+                { name: 'Fine-tuning LLMs', logo: '⚙️' },
+                { name: 'MLOps Pipelines', logo: '🚀' },
+                { name: 'Topic Modeling', logo: '📊' },
+                { name: 'Vector Embeddings', logo: '🎯' }
               ].map((tech, index) => (
                 <span 
                   key={index} 
-                  className="tech-tag border-accent/20 text-accent hover:bg-accent/20 hover:border-accent/40"
+                  className="tech-tag border-accent/20 text-accent hover:bg-accent/20 hover:border-accent/40 flex items-center gap-2"
                 >
-                  {tech}
+                  <span className="text-lg">{tech.logo}</span>
+                  {tech.name}
                 </span>
               ))}
             </div>

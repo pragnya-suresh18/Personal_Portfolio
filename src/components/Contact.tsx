@@ -10,19 +10,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'your.email@example.com',
-      href: 'mailto:your.email@example.com'
+      value: 'pragnyasuresh@gmail.com',
+      href: 'mailto:pragnyasuresh@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+1 (555) 123-4567',
-      href: 'tel:+15551234567'
+      value: '(213) 551-5701',
+      href: 'tel:+12135515701'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'San Francisco, CA',
+      value: 'Los Angeles, California',
       href: '#'
     }
   ];
@@ -31,19 +31,19 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/yourusername',
+      href: 'https://github.com/pragnyasuresh',
       color: 'hover:text-foreground'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/yourprofile',
+      href: 'https://linkedin.com/in/pragnyasuresh',
       color: 'hover:text-blue-400'
     },
     {
       icon: Mail,
       label: 'Email',
-      href: 'mailto:your.email@example.com',
+      href: 'mailto:pragnyasuresh@gmail.com',
       color: 'hover:text-red-400'
     }
   ];
@@ -58,7 +58,7 @@ const Contact = () => {
               Let's Work Together
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Have a project in mind? I'd love to hear about it. Let's discuss how we can bring your ideas to life.
+              Let's discuss ML opportunities, collaborations, or connect about AI/tech innovations.
             </p>
           </div>
 
