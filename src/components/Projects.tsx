@@ -68,7 +68,6 @@ const Projects = () => {
   ];
 
   const featuredProjects = projects.filter(project => project.featured);
-  const otherProjects = projects.filter(project => !project.featured);
 
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-background to-muted/20">
@@ -136,58 +135,6 @@ const Projects = () => {
                 </CardContent>
               </Card>
             ))}
-          </div>
-
-          {/* Other Projects Grid */}
-          <div>
-            <h3 className="text-2xl font-semibold mb-8 text-center text-foreground">
-              More Projects
-            </h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {otherProjects.map((project, index) => (
-                <Card key={index} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm">
-                  <CardHeader>
-                    <div className="flex items-center justify-between">
-                      <CardTitle className="text-lg font-semibold">{project.title}</CardTitle>
-                      <div className="flex space-x-2">
-                        <Button variant="ghost" size="icon" className="h-8 w-8">
-                          <ExternalLink className="h-4 w-4" />
-                        </Button>
-                        <Button variant="ghost" size="icon" className="h-8 w-8">
-                          <Github className="h-4 w-4" />
-                        </Button>
-                      </div>
-                    </div>
-                    <CardDescription className="text-sm">
-                      {project.description}
-                    </CardDescription>
-                  </CardHeader>
-                  
-                  <CardContent>
-                    <div className="flex flex-wrap gap-1">
-                      {project.technologies.slice(0, 3).map((tech, techIndex) => (
-                        <span key={techIndex} className="tech-tag text-xs">
-                          {tech}
-                        </span>
-                      ))}
-                      {project.technologies.length > 3 && (
-                        <span className="tech-tag text-xs">
-                          +{project.technologies.length - 3}
-                        </span>
-                      )}
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          {/* View More Projects */}
-          <div className="text-center mt-12">
-            <Button variant="outline" size="lg" className="hover:scale-105 transition-transform">
-              <Github className="h-5 w-5 mr-2" />
-              View All Projects on GitHub
-            </Button>
           </div>
         </div>
       </div>

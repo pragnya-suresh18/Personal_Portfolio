@@ -30,7 +30,7 @@ const About = () => {
               About Me
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Passionate about creating digital experiences that make a difference
+            Engineer focused on AI/ML - curious about how things work and how to make them better
             </p>
           </div>
 
@@ -49,15 +49,13 @@ const About = () => {
                 </p>
                 
                 <p>
-                  Currently pursuing my Master's in Computer Science (AI) at USC (GPA: 3.85), I specialize in LLM fine-tuning, 
+                  Currently pursuing my Master's in Computer Science at USC (GPA: 3.85), I specialize in LLM fine-tuning, 
                   RAG pipelines, and MLOps. I've built systems serving 10K+ queries/day, contributed to $1M+ in revenue, 
-                  and led the development of AI Studio - a no-code ML platform that accelerated deployment from weeks to days.
+                  and led the development of AI Studio - a no-code ML platform that accelerated ML model deployment from weeks to days.
                 </p>
                 
                 <p>
-                  Beyond my core ML expertise, I have full-stack development experience with Angular, TypeScript, and Node.js. 
-                  I'm passionate about bridging the gap between research and production, creating scalable AI solutions 
-                  that solve real-world problems.
+                  Beyond my core ML expertise, I have full-stack development experience with Angular, TypeScript, Node.js, and MongoDB via CS571 which is an advanced web development course at USC. 
                 </p>
               </div>
             </div>
