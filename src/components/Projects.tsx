@@ -96,10 +96,10 @@ const Projects = () => {
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </Button>
-                    <Button variant="outline" size="sm">
+                    {/* <Button variant="outline" size="sm">
                       <Github className="h-4 w-4 mr-2" />
                       Code
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
                 
