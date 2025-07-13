@@ -109,10 +109,10 @@ const Skills = () => {
                           animationDelay: `${(categoryIndex * 100) + (skillIndex * 50)}ms` 
                         }}
                       >
-                        {typeof skill.logo === 'string' && (skill.logo.startsWith('http') || skill.logo.includes('.svg')) ? (
-                          <img src={skill.logo} alt={`${skill.name} logo`} className="w-5 h-5" />
-                        ) : (
+                        {typeof skill.logo === 'string' && skill.logo.length === 2 ? (
                           <span className="text-lg">{skill.logo}</span>
+                        ) : (
+                          <img src={skill.logo} alt={`${skill.name} logo`} className="w-5 h-5" />
                         )}
                         {skill.name}
                       </span>
@@ -141,10 +141,10 @@ const Skills = () => {
                   key={index} 
                   className="tech-tag border-accent/20 text-accent hover:bg-accent/20 hover:border-accent/40 flex items-center gap-2"
                 >
-                  {typeof tech.logo === 'string' && (tech.logo.startsWith('http') || tech.logo.includes('.svg')) ? (
-                    <img src={tech.logo} alt={`${tech.name} logo`} className="w-5 h-5" />
-                  ) : (
+                  {typeof tech.logo === 'string' && tech.logo.length === 2 ? (
                     <span className="text-lg">{tech.logo}</span>
+                  ) : (
+                    <img src={tech.logo} alt={`${tech.name} logo`} className="w-5 h-5" />
                   )}
                   {tech.name}
                 </span>
