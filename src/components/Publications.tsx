@@ -21,7 +21,7 @@ const Publications = () => {
       platform: 'Springer',
       date: '2020',
       description: 'Novel approach to recognize emotion in dyadic conversations using multimodal data from text, audio, and video sources.',
-      url: '#',
+      url: 'https://link.springer.com/chapter/10.1007/978-981-15-7234-0_71',
       tags: ['Deep Learning', 'Multimodal AI', 'Research', 'Computer Vision'],
       featured: false
     },
@@ -31,7 +31,7 @@ const Publications = () => {
       platform: 'IJRTE',
       date: '2019',
       description: 'Employed unsupervised techniques for segmentation of Kannada words and recognition of syllables under low resource conditions.',
-      url: '#',
+      url: 'https://www.ijrte.org/wp-content/uploads/papers/v8i4/D9589118419.pdf',
       tags: ['Speech Processing', 'NLP', 'Unsupervised Learning', 'Low Resource'],
       featured: false
     }
