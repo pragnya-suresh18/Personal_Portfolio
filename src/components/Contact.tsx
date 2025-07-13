@@ -14,12 +14,6 @@ const Contact = () => {
       href: 'mailto:pragnyasuresh@gmail.com'
     },
     {
-      icon: Phone,
-      label: 'Phone',
-      value: '(213) 551-5701',
-      href: 'tel:+12135515701'
-    },
-    {
       icon: MapPin,
       label: 'Location',
       value: 'Los Angeles, California',
