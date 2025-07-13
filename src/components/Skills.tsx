@@ -1,52 +1,73 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
+// Import tech logos
+import pythonLogo from '@/assets/logos/python.svg';
+import pytorchLogo from '@/assets/logos/pytorch.svg';
+import scikitLearnLogo from '@/assets/logos/scikit-learn.svg';
+import huggingfaceLogo from '@/assets/logos/huggingface.svg';
+import pandasLogo from '@/assets/logos/pandas.svg';
+import numpyLogo from '@/assets/logos/numpy.svg';
+import awsLogo from '@/assets/logos/aws.svg';
+import gcpLogo from '@/assets/logos/gcp.svg';
+import dockerLogo from '@/assets/logos/docker.svg';
+import kubernetesLogo from '@/assets/logos/kubernetes.svg';
+import gitLogo from '@/assets/logos/git.svg';
+import fastapiLogo from '@/assets/logos/fastapi.svg';
+import flaskLogo from '@/assets/logos/flask.svg';
+import mongodbLogo from '@/assets/logos/mongodb.svg';
+import angularLogo from '@/assets/logos/angular.svg';
+import typescriptLogo from '@/assets/logos/typescript.svg';
+import nodejsLogo from '@/assets/logos/nodejs.svg';
+import bootstrapLogo from '@/assets/logos/bootstrap.svg';
+import expressLogo from '@/assets/logos/express.svg';
+
 const Skills = () => {
   const skillCategories = [
     {
       title: 'Machine Learning & AI',
       skills: [
-        { name: 'Python', logo: '🐍' },
-        { name: 'PyTorch', logo: '🔥' },
-        { name: 'Scikit-learn', logo: '🧬' },
-        { name: 'Hugging Face', logo: '🤗' },
+        { name: 'Python', logo: pythonLogo },
+        { name: 'PyTorch', logo: pytorchLogo },
+        { name: 'Scikit-learn', logo: scikitLearnLogo },
+        { name: 'Hugging Face', logo: huggingfaceLogo },
         { name: 'LangChain', logo: '🦜' },
         { name: 'Transformers', logo: '🤖' },
         { name: 'BERT', logo: '📝' },
-        { name: 'Pandas', logo: '🐼' },
-        { name: 'NumPy', logo: '🔢' }
+        { name: 'Pandas', logo: pandasLogo },
+        { name: 'NumPy', logo: numpyLogo }
       ]
     },
     {
       title: 'Cloud & MLOps',
       skills: [
-        { name: 'AWS', logo: '☁️' },
-        { name: 'GCP', logo: '🌥️' },
-        { name: 'Docker', logo: '🐳' },
-        { name: 'Kubernetes', logo: '⚓' },
+        { name: 'AWS', logo: awsLogo },
+        { name: 'GCP', logo: gcpLogo },
+        { name: 'Docker', logo: dockerLogo },
+        { name: 'Kubernetes', logo: kubernetesLogo },
         { name: 'MLFlow', logo: '📊' },
         { name: 'CI/CD', logo: '🔄' },
-        { name: 'Git', logo: '📋' }
+        { name: 'Git', logo: gitLogo }
       ]
     },
     {
       title: 'Backend & APIs',
       skills: [
-        { name: 'FastAPI', logo: '⚡' },
-        { name: 'Flask', logo: '🌶️' },
+        { name: 'FastAPI', logo: fastapiLogo },
+        { name: 'Flask', logo: flaskLogo },
         { name: 'REST APIs', logo: '🔗' },
         { name: 'Microservices', logo: '🏗️' },
-        { name: 'MongoDB', logo: '🍃' },
+        { name: 'MongoDB', logo: mongodbLogo },
         { name: 'Vector DBs', logo: '🗂️' }
       ]
     },
     {
       title: 'Frontend & Full Stack',
       skills: [
-        { name: 'Angular', logo: '🅰️' },
-        { name: 'TypeScript', logo: '📘' },
-        { name: 'Node.js', logo: '💚' },
-        { name: 'Bootstrap', logo: '💜' },
-        { name: 'Express', logo: '🚂' }
+        { name: 'Angular', logo: angularLogo },
+        { name: 'TypeScript', logo: typescriptLogo },
+        { name: 'Node.js', logo: nodejsLogo },
+        { name: 'Bootstrap', logo: bootstrapLogo },
+        { name: 'Express', logo: expressLogo }
       ]
     }
   ];
@@ -88,7 +109,11 @@ const Skills = () => {
                           animationDelay: `${(categoryIndex * 100) + (skillIndex * 50)}ms` 
                         }}
                       >
-                        <span className="text-lg">{skill.logo}</span>
+                        {typeof skill.logo === 'string' && (skill.logo.startsWith('http') || skill.logo.includes('.svg')) ? (
+                          <img src={skill.logo} alt={`${skill.name} logo`} className="w-5 h-5" />
+                        ) : (
+                          <span className="text-lg">{skill.logo}</span>
+                        )}
                         {skill.name}
                       </span>
                     ))}
@@ -116,7 +141,11 @@ const Skills = () => {
                   key={index} 
                   className="tech-tag border-accent/20 text-accent hover:bg-accent/20 hover:border-accent/40 flex items-center gap-2"
                 >
-                  <span className="text-lg">{tech.logo}</span>
+                  {typeof tech.logo === 'string' && (tech.logo.startsWith('http') || tech.logo.includes('.svg')) ? (
+                    <img src={tech.logo} alt={`${tech.name} logo`} className="w-5 h-5" />
+                  ) : (
+                    <span className="text-lg">{tech.logo}</span>
+                  )}
                   {tech.name}
                 </span>
               ))}
