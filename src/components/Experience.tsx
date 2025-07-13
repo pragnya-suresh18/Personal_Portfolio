@@ -165,7 +165,7 @@ const Experience = () => {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    GPA: 9.29/10. Data Science Specialization. Published research in multimodal emotion recognition.
+                    GPA: 9.29/10. Data Science Specialization.
                   </p>
                 </CardContent>
               </Card>

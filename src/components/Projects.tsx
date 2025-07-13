@@ -15,16 +15,16 @@ const Projects = () => {
       featured: true,
       highlights: ['Full-featured auth flow with secure sessions', 'Dynamic Artsy API integration', 'Favorites with real-time updates', 'Deployed on Google Cloud Platform']
     },
-    {
-      title: 'Healthcare RAG Chatbot',
-      description: 'Built and deployed a Retrieval-Augmented Generation pipeline for healthcare chatbot serving 10K+ queries/day, boosting user engagement by 25% with fine-tuned LLMs.',
-      image: '/api/placeholder/400/250',
-      technologies: ['Python', 'LangChain', 'Hugging Face', 'Vector DBs', 'FastAPI', 'AWS'],
-      liveUrl: '#',
-      githubUrl: '#',
-      featured: true,
-      highlights: ['10K+ daily queries processed', '25% boost in user engagement', 'Fine-tuned Llama 2 and Mistral models', 'Production-ready healthcare solution']
-    },
+    // {
+    //   title: 'Healthcare RAG Chatbot',
+    //   description: 'Built and deployed a Retrieval-Augmented Generation pipeline for healthcare chatbot serving 10K+ queries/day, boosting user engagement by 25% with fine-tuned LLMs.',
+    //   image: '/api/placeholder/400/250',
+    //   technologies: ['Python', 'LangChain', 'Hugging Face', 'Vector DBs', 'FastAPI', 'AWS'],
+    //   liveUrl: '#',
+    //   githubUrl: '#',
+    //   featured: true,
+    //   highlights: ['10K+ daily queries processed', '25% boost in user engagement', 'Fine-tuned Llama 2 and Mistral models', 'Production-ready healthcare solution']
+    // },
     {
       title: 'AI Studio - No-Code ML Platform',
       description: 'Led development of a no-code ML platform for model lifecycle management. Built MLOps pipelines that cut deployment time from 2 weeks to 2 days.',
