@@ -98,12 +98,12 @@ const Projects = () => {
                         Live Demo
                       </a>
                     </Button>
-                    <Button variant="outline" size="sm" asChild>
+                    {/* <Button variant="outline" size="sm" asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4 mr-2" />
                         Code
                       </a>
-                    </Button>
+                    </Button> */}
                   </div>
                 </div>
                 
