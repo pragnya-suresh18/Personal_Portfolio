@@ -143,7 +143,7 @@ const Experience = () => {
           {/* Education Section */}
           <div className="mt-20">
             <h3 className="text-2xl font-semibold text-center mb-8 text-foreground">
-              Education & Publications
+              Education 
             </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">

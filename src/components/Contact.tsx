@@ -70,28 +70,9 @@ const Contact = () => {
                 </p>
               </div>
 
-              {/* Contact Details */}
-              <div className="space-y-4">
-                {contactInfo.map((contact, index) => (
-                  <a
-                    key={index}
-                    href={contact.href}
-                    className="flex items-center gap-4 p-4 rounded-lg border border-border/50 bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-all duration-300 group"
-                  >
-                    <div className="p-3 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
-                      <contact.icon className="h-5 w-5 text-primary" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-foreground">{contact.label}</p>
-                      <p className="text-muted-foreground">{contact.value}</p>
-                    </div>
-                  </a>
-                ))}
-              </div>
 
               {/* Social Links */}
               <div>
-                <h4 className="font-semibold mb-4 text-foreground">Connect With Me</h4>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (
                     <Button
