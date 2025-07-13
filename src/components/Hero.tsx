@@ -17,14 +17,14 @@ const Hero = () => {
       <div className="absolute bottom-20 right-20 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
       
       <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="max-w-4xl mx-auto animate-fade-in-up">
+        <div className="max-w-4xl mx-auto animate-fade-in-up pt-20">
           {/* Greeting */}
           <p className="text-lg text-muted-foreground mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Hello, I'm
           </p>
           
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text animate-fade-in" style={{ animationDelay: '0.4s', lineHeight: '1.1' }}>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text animate-fade-in" style={{ animationDelay: '0.4s', lineHeight: '1.15', paddingBottom: '0.05em' }}>
             Pragnya Suresh
           </h1>
           <br></br>
