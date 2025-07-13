@@ -24,7 +24,7 @@ const Hero = () => {
           </p>
           
           {/* Name */}
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text animate-fade-in" style={{ animationDelay: '0.4s' }}>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text animate-fade-in leading-tight" style={{ animationDelay: '0.4s' }}>
             Pragnya Suresh
           </h1>
           <br></br>
