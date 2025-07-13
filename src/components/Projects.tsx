@@ -92,14 +92,18 @@ const Projects = () => {
                     <span className="text-6xl opacity-30">🚀</span>
                   </div>
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button size="sm" className="glow-effect">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
+                    <Button size="sm" className="glow-effect" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
                     </Button>
-                    {/* <Button variant="outline" size="sm">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </Button> */}
+                    <Button variant="outline" size="sm" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
                   </div>
                 </div>
                 
