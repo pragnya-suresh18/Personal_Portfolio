@@ -27,6 +27,7 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-6 hero-text animate-fade-in" style={{ animationDelay: '0.4s' }}>
             Pragnya Suresh
           </h1>
+          <br></br>
           
           {/* Professional Titles */}
           <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
