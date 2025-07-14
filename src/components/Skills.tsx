@@ -20,8 +20,6 @@ import typescriptLogo from '@/assets/logos/typescript.svg';
 import nodejsLogo from '@/assets/logos/nodejs.svg';
 import bootstrapLogo from '@/assets/logos/bootstrap.svg';
 import expressLogo from '@/assets/logos/express.svg';
-import weaviateLogo from '@/assets/logos/weaviate.svg';
-import microservicesLogo from '@/assets/logos/microservices.svg';
 
 const Skills = () => {
   const skillCategories = [
@@ -57,9 +55,9 @@ const Skills = () => {
         { name: 'FastAPI', logo: fastapiLogo },
         { name: 'Flask', logo: flaskLogo },
         { name: 'REST APIs', logo: '🔗' },
-        { name: 'Microservices', logo: microservicesLogo },
+        { name: 'Microservices', logo: '⚙️' },
         { name: 'MongoDB', logo: mongodbLogo },
-        { name: 'Vector DBs', logo: weaviateLogo }
+        { name: 'Vector DBs', logo: '🗄️' }
       ]
     },
     {
