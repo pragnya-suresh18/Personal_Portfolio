@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Database } from 'lucide-react';
 
 // Import tech logos
 import pythonLogo from '@/assets/logos/python.svg';
@@ -57,7 +58,7 @@ const Skills = () => {
         { name: 'REST APIs', logo: '🔗' },
         { name: 'Microservices', logo: '🔧' },
         { name: 'MongoDB', logo: mongodbLogo },
-        { name: 'Vector DBs', logo: '📊' }
+        { name: 'Vector DBs', logo: Database }
       ]
     },
     {
@@ -111,8 +112,10 @@ const Skills = () => {
                       >
                         {typeof skill.logo === 'string' && skill.logo.length === 2 ? (
                           <span className="text-lg">{skill.logo}</span>
-                        ) : (
+                        ) : typeof skill.logo === 'string' ? (
                           <img src={skill.logo} alt={`${skill.name} logo`} className="w-5 h-5" />
+                        ) : (
+                          <skill.logo className="w-5 h-5" />
                         )}
                         {skill.name}
                       </span>
