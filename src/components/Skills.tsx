@@ -55,9 +55,9 @@ const Skills = () => {
         { name: 'FastAPI', logo: fastapiLogo },
         { name: 'Flask', logo: flaskLogo },
         { name: 'REST APIs', logo: '🔗' },
-        { name: 'Microservices', logo: '⚙️' },
+        { name: 'Microservices', logo: '🔧' },
         { name: 'MongoDB', logo: mongodbLogo },
-        { name: 'Vector DBs', logo: '🗄️' }
+        { name: 'Vector DBs', logo: '📊' }
       ]
     },
     {
