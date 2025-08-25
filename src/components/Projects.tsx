@@ -2,6 +2,7 @@ import { ExternalLink, Github } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import awsLogo from '@/assets/logos/aws.svg';
 
 const Projects = () => {
   const projects = [
@@ -89,7 +90,11 @@ const Projects = () => {
               <Card key={index} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                    <span className="text-6xl opacity-30">🚀</span>
+                    {project.title === 'AutoCloud Navigator' ? (
+                      <img src={awsLogo} alt="AWS Logo" className="h-16 w-auto opacity-70" />
+                    ) : (
+                      <span className="text-6xl opacity-30">🚀</span>
+                    )}
                   </div>
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
                     <Button size="sm" className="glow-effect" asChild>
