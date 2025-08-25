@@ -6,6 +6,16 @@ import { Badge } from '@/components/ui/badge';
 const Projects = () => {
   const projects = [
     {
+      title: 'AutoCloud Navigator',
+      description: 'Built an intelligent, multi-agent AWS assistant using Strands Agent, Amazon Q Developer CLI (custom agents), and Bedrock AgentCore Gateway to enable natural-language troubleshooting, real-time diagnostics, and automated optimization across CloudWatch, Lambda, and RDS.',
+      image: '/api/placeholder/400/250',
+      technologies: ['Strands Agent', 'Amazon Q CLI', 'Bedrock AgentCore Gateway', 'AWS', 'CloudWatch', 'Lambda', 'RDS', 'FastAPI', 'Next.js', 'Vercel'],
+      liveUrl: '#',
+      githubUrl: '#',
+      featured: true,
+      highlights: ['Multi-agent architecture with domain-specific agents', 'Natural language troubleshooting interface', 'Real-time diagnostics and automated optimization', 'Safe remediation with guardrails (dry-run + approval)', 'Clean web UI + CLI for seamless interaction']
+    },
+    {
       title: 'Artist Search & Discovery Platform',
       description: 'A responsive, full-stack web application for searching, exploring, and favoriting artists using the Artsy API. Features JWT authentication, Angular frontend, Node.js backend, and Google Cloud deployment.',
       image: '/api/placeholder/400/250',
@@ -15,16 +25,6 @@ const Projects = () => {
       featured: true,
       highlights: ['Full-featured auth flow with secure sessions', 'Dynamic Artsy API integration', 'Favorites with real-time updates', 'Deployed on Google Cloud Platform']
     },
-    // {
-    //   title: 'Healthcare RAG Chatbot',
-    //   description: 'Built and deployed a Retrieval-Augmented Generation pipeline for healthcare chatbot serving 10K+ queries/day, boosting user engagement by 25% with fine-tuned LLMs.',
-    //   image: '/api/placeholder/400/250',
-    //   technologies: ['Python', 'LangChain', 'Hugging Face', 'Vector DBs', 'FastAPI', 'AWS'],
-    //   liveUrl: '#',
-    //   githubUrl: '#',
-    //   featured: true,
-    //   highlights: ['10K+ daily queries processed', '25% boost in user engagement', 'Fine-tuned Llama 2 and Mistral models', 'Production-ready healthcare solution']
-    // },
     {
       title: 'AI Studio - No-Code ML Platform',
       description: 'Led development of a no-code ML platform for model lifecycle management. Built MLOps pipelines that cut deployment time from 2 weeks to 2 days.',
