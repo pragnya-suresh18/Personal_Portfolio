@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import awsLogo from '@/assets/logos/aws.svg';
+import artsyLogo from '@/assets/logos/artsy.svg';
 
 const Projects = () => {
   const projects = [
@@ -92,6 +93,8 @@ const Projects = () => {
                   <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                     {project.title === 'AutoCloud Navigator' ? (
                       <img src={awsLogo} alt="AWS Logo" className="h-16 w-auto opacity-70" />
+                    ) : project.title === 'Artist Search & Discovery Platform' ? (
+                      <img src={artsyLogo} alt="Artsy Logo" className="h-16 w-auto opacity-70" />
                     ) : (
                       <span className="text-6xl opacity-30">🚀</span>
                     )}
