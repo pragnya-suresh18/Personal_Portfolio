@@ -31,7 +31,7 @@ const Hero = () => {
           
           {/* Professional Titles */}
           <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            {['Software & ML Engineer', 'AI/ML Specialist', 'MLOps Expert'].map((title, index) => (
+            {['Software & ML Engineer', 'Distributed Systems', 'AI Specialist'].map((title, index) => (
               <span key={index} className="tech-tag">
                 {title}
               </span>
@@ -40,7 +40,7 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            I'm a Software and ML Engineer currently pursuing my MS in Computer Science at USC. I love building systems where solid software design meets machine learning, whether that's distributed services, intelligent APIs, or full MLOps pipelines. My goal is to craft reliable, explainable, and high-performing systems that make AI practical at scale.
+            I'm a Software and ML Engineer currently pursuing my MS in Computer Science at USC. I specialize in building systems that blend software engineering, distributed systems, and AI—whether that's scalable microservices, intelligent APIs, or end-to-end ML pipelines. My goal is to craft reliable, high-performing systems that make AI practical at scale.
           </p>
           
           {/* CTA Buttons */}
