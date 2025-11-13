@@ -133,12 +133,8 @@ const Skills = () => {
             </h3>
             <div className="flex flex-wrap justify-center gap-3">
               {[
-                { name: 'Advanced NLP', logo: '🧠' },
-                { name: 'RAG Systems', logo: '🔍' },
-                { name: 'Fine-tuning LLMs', logo: '⚙️' },
-                { name: 'MLOps Pipelines', logo: '🚀' },
-                { name: 'Topic Modeling', logo: '📊' },
-                { name: 'Vector Embeddings', logo: '🎯' }
+                { name: 'MCP (Model Context Protocol)', logo: '🔗' },
+                { name: 'AI Agents', logo: '🤖' }
               ].map((tech, index) => (
                 <span 
                   key={index} 
