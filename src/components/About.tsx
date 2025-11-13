@@ -81,9 +81,8 @@ const About = () => {
           </div>
 
           {/* Stats */}
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { number: '5+', label: 'Years Experience' },
               { number: '10K+', label: 'Daily Queries Served' },
               { number: '35%', label: 'Retrieval Improvement' },
               { number: '$1M+', label: 'Revenue Impact' }
