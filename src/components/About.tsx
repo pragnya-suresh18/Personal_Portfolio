@@ -43,19 +43,15 @@ const About = () => {
               
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  I'm a Machine Learning Engineer with 4+ years of experience building and deploying ML and GenAI systems at scale. 
-                  My journey began at Ushur, where I progressed from intern to Manager - Data Science, leading ML initiatives 
-                  and developing AI solutions that drive real business impact.
+                  I'm currently pursuing my Master's in Computer Science at USC (GPA: 3.9/4.0). My academic work centers on artificial intelligence, distributed systems, and the engineering required to turn complex model behavior into reliable, end-to-end intelligent applications. I'm especially interested in how language models interact with retrieval systems and agents, and how these components can be designed to work together in a stable, interpretable way.
                 </p>
                 
                 <p>
-                  Currently pursuing my Master's in Computer Science at USC (GPA: 3.85), I specialize in LLM fine-tuning, 
-                  RAG pipelines, and MLOps. I've built systems serving 10K+ queries/day, contributed to $1M+ in revenue, 
-                  and led the development of AI Studio - a no-code ML platform that accelerated ML model deployment from weeks to days.
+                  Before USC, I worked as a Software Engineer in Machine Learning at Ushur, an AI SaaS company, where I built and maintained systems that had to perform reliably for enterprise clients. My work involved developing retrieval pipelines, vector search services with Weaviate, and scalable model-serving APIs. A major part of my role was designing and tuning RAG systems - I worked on improving retrieval quality through better chunking strategies, careful embedding selection, query reformulation, and HyDE-style synthetic query generation.
                 </p>
                 
                 <p>
-                  Beyond my core ML expertise, I have full-stack development experience with Angular, TypeScript, Node.js, and MongoDB via CS571 which is an advanced web development course at USC. 
+                  I also worked on multi-agent systems, including an AWS-based troubleshooting assistant that used coordinated agents to analyze logs, detect anomalies, and identify root causes. Across these projects, I've learned that I enjoy roles that involve both research thinking and rigorous engineering - exploring new techniques, testing them carefully, and then building the infrastructure required to make them useful in real applications.
                 </p>
               </div>
             </div>
@@ -87,9 +83,9 @@ const About = () => {
           {/* Stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
             {[
-              { number: '4+', label: 'Years ML Experience' },
+              { number: '5+', label: 'Years Experience' },
               { number: '10K+', label: 'Daily Queries Served' },
-              { number: '3+', label: 'LLMs Fine-tuned' },
+              { number: '35%', label: 'Retrieval Improvement' },
               { number: '$1M+', label: 'Revenue Impact' }
             ].map((stat, index) => (
               <div key={index} className="text-center">

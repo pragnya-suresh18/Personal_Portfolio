@@ -40,7 +40,7 @@ const Hero = () => {
           
           {/* Description */}
           <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.8s' }}>
-            I'm a Software and ML Engineer currently pursuing my MS in Computer Science at USC. I specialize in building systems that blend software engineering, distributed systems, and AI—whether that's scalable microservices, intelligent APIs, or end-to-end ML pipelines. My goal is to craft reliable, high-performing systems that make AI practical at scale.
+            I'm a Software and ML Engineer currently pursuing my MS in Computer Science at USC. I specialize in building systems that blend software engineering, distributed systems, and AI - whether that's scalable microservices, intelligent APIs, or end-to-end ML pipelines. My goal is to craft reliable, high-performing systems that make AI practical at scale.
           </p>
           
           {/* CTA Buttons */}
