@@ -31,7 +31,7 @@ const Hero = () => {
           
           {/* Professional Titles */}
           <div className="flex flex-wrap justify-center gap-3 mb-8 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            {['Software & ML Engineer', 'Distributed Systems', 'AI Specialist'].map((title, index) => (
+            {['Software & ML Engineer', 'Distributed Systems', 'AI Engineering'].map((title, index) => (
               <span key={index} className="tech-tag">
                 {title}
               </span>
