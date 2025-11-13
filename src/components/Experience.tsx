@@ -4,60 +4,56 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/com
 const Experience = () => {
   const experiences = [
     {
-      title: 'Manager - Data Science',
+      title: 'Software Engineer-III (ML)',
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jun 2023 - Dec 2024',
+      duration: 'Jan 2020 - Dec 2024',
       description: [
-        'Built and deployed a Retrieval-Augmented Generation (RAG) pipeline for healthcare chatbot serving 10K+ queries/day with 25% engagement boost',
-        'Designed and implemented scalable AI solutions by fine-tuning open-source LLMs (Llama 2, Mistral, Flan) for 3+ large enterprise clients',
-        'Led development of AI Studio, a no-code ML platform for model lifecycle management with MLOps pipelines using AWS, Docker, Kubernetes, and MLflow',
-        'Cut deployment time from 2 weeks to 2 days and accelerated adoption across enterprise use cases'
+        'Led end-to-end delivery of a cloud-native, microservices-based RAG service with Weaviate vector search, serving 10K+ daily healthcare chatbot queries in production and improving answer relevance by 35% through optimized semantic retrieval',
+        'Owned the SDLC of AI Studio, a no-code ML platform that automated data preparation, training, and deployment, reducing model delivery time from 2 weeks to 2 days and earning a Spot Award',
+        'Built versioned model-serving APIs with scalable design patterns, integrating MLflow, automated health checks, and CI/CD pipelines for zero-downtime deployments and 50% faster rollbacks'
       ],
-      technologies: ['Python', 'LangChain', 'Hugging Face', 'AWS', 'Docker', 'Kubernetes', 'MLflow', 'RAG']
+      technologies: ['Python', 'Weaviate', 'RAG', 'MLflow', 'AWS', 'Docker', 'Kubernetes', 'Microservices']
     },
     {
-      title: 'Staff Data Scientist',
+      title: 'Software Engineer-II (ML)',
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jun 2022 - Jun 2023',
+      duration: 'Jan 2020 - Dec 2024',
       description: [
-        'Developed a data extraction pipeline leveraging novel ontology-based approach with 30% accuracy improvement for processing unstructured email data',
-        'Directly contributed to $1M in revenue through improved data processing capabilities',
-        'Architected and deployed FastAPI server handling 100+ asynchronous requests per second for operations like skill visualization, model training, and analysis',
-        'Trained models using BERT and Sentence Transformers to generate embeddings for topic modeling and classification tasks'
+        'Engineered an unstructured data-extraction service that automated insurance RFP email and document processing, cutting broker turnaround time from days to minutes and securing $1M in revenue',
+        'Architected and containerized a FastAPI service with Docker and Kubernetes that handled 200+ asynchronous reqs/sec at <300 ms latency for model training, visualization, and analysis, with load balancing and automated scaling',
+        'Built a fault-tolerant distributed pipeline with RabbitMQ, adding retries and dead-letter queues to recover failed jobs and handle 45% more tasks under peak load',
+        'Drove code reviews and created onboarding guides to standardize coding practices and accelerate new-hire ramp-up'
       ],
-      technologies: ['Python', 'BERT', 'Sentence Transformers', 'FastAPI', 'NLP', 'Topic Modeling']
+      technologies: ['Python', 'FastAPI', 'Docker', 'Kubernetes', 'RabbitMQ', 'NLP', 'Distributed Systems']
     },
     {
-      title: 'Data Science Engineer',
+      title: 'Software Engineer-I (ML)',
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jul 2020 - Jun 2022',
+      duration: 'Jan 2020 - Dec 2024',
       description: [
-        'Engineered robust text preprocessing and feature extraction pipelines to support classification models across 10+ production use cases',
-        'Created an interactive EDA tool using Streamlit, Pandas, NumPy, and Matplotlib to analyze complex datasets',
-        'Uncovered 10+ actionable insights that informed data-driven decisions across multiple teams',
-        'Achieved over 70% KPI success across NLP projects by aligning modeling pipelines with business goals'
+        'Built and deployed 10+ production classification and extraction pipelines integrating feature selection and regularization algorithms, improving accuracy by 15-20% on noisy datasets',
+        'Created a visualization dashboard with 15+ automated charts, improving data observability and saving 3 weeks of engineering effort per release cycle',
+        'Won 1st place in company-wide hackathon with an NLP intent classifier later productized to automate message routing for enterprise customers'
       ],
-      technologies: ['Python', 'Streamlit', 'Pandas', 'NumPy', 'Matplotlib', 'NLP', 'Feature Engineering']
+      technologies: ['Python', 'Pandas', 'NumPy', 'Matplotlib', 'NLP', 'Feature Engineering']
     },
     {
-      title: 'Data Science Intern',
+      title: 'Software Engineering Intern',
       company: 'Ushur',
       type: 'Internship',
       location: 'Bengaluru, Karnataka',
       duration: 'Jan 2020 - Jun 2020',
       description: [
-        'Designed a multi-language PII data anonymizer using Named Entity Recognition (NER), regular expressions, and language-specific tokenization',
-        'Improved processing efficiency with multiprocessing, reducing runtime for large datasets by 40%',
-        'Built reusable NLP libraries using spaCy, NLTK, and regex for scalable preprocessing, tokenization, and pattern extraction',
-        'Implemented an SFTP watch tool that automated ingestion of ~50 files/day and triggered downstream transformation workflows'
+        'Built a high-throughput PII data anonymizer, parallelized across CPU cores, reducing runtime by 40% on multi-million-row datasets',
+        'Strengthened pre-release quality by building a Java regression test suite for API and integration checks, catching ~10 critical bugs and preventing production issues during rollout'
       ],
-      technologies: ['Python', 'spaCy', 'NLTK', 'NER', 'Regex', 'Multiprocessing', 'SFTP']
+      technologies: ['Python', 'Java', 'spaCy', 'NLTK', 'Multiprocessing', 'API Testing']
     }
   ];
 
@@ -71,7 +67,7 @@ const Experience = () => {
               Professional Experience
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              4+ years of building and deploying ML systems at scale
+              Building and deploying ML systems at scale
             </p>
           </div>
 
@@ -148,24 +144,24 @@ const Experience = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-lg">Master's, Computer Science (AI)</CardTitle>
+                  <CardTitle className="text-lg">Master's, Computer Science</CardTitle>
                   <CardDescription>University of Southern California • Jan 2025 - Dec 2026</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    GPA: 3.85/4. Focusing on advanced LLMs, AI Agents, and MLOps.
+                    GPA: 3.9/4.0. Coursework: Analysis of Algorithms, Web Technologies, Database Systems, Machine Learning, Information Retrieval
                   </p>
                 </CardContent>
               </Card>
               
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
                 <CardHeader>
-                  <CardTitle className="text-lg">B.Tech, Computer Science</CardTitle>
+                  <CardTitle className="text-lg">Bachelor of Technology, Computer Science</CardTitle>
                   <CardDescription>PES University • Aug 2016 - May 2020</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    GPA: 9.29/10. Data Science Specialization.
+                    GPA: 3.7/4.0. Prof. CNR Rao Merit Scholar (top 5%)
                   </p>
                 </CardContent>
               </Card>
