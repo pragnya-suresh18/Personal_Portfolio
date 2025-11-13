@@ -35,7 +35,7 @@ const Experience = () => {
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jul 2020 - Jun 2023',
+      duration: 'Jul 2020 - Jun 2022',
       description: [
         'Built and deployed 10+ production classification and extraction pipelines integrating feature selection and regularization algorithms, improving accuracy by 15-20% on noisy datasets',
         'Created a visualization dashboard with 15+ automated charts, improving data observability and saving 3 weeks of engineering effort per release cycle',
