@@ -8,7 +8,7 @@ const Experience = () => {
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jan 2020 - Dec 2024',
+      duration: 'Jun 2023 - Dec 2024',
       description: [
         'Led end-to-end delivery of a cloud-native, microservices-based RAG service with Weaviate vector search, serving 10K+ daily healthcare chatbot queries in production and improving answer relevance by 35% through optimized semantic retrieval',
         'Owned the SDLC of AI Studio, a no-code ML platform that automated data preparation, training, and deployment, reducing model delivery time from 2 weeks to 2 days and earning a Spot Award',
@@ -21,7 +21,7 @@ const Experience = () => {
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jan 2020 - Dec 2024',
+      duration: 'Jun 2022 - Jun 2023',
       description: [
         'Engineered an unstructured data-extraction service that automated insurance RFP email and document processing, cutting broker turnaround time from days to minutes and securing $1M in revenue',
         'Architected and containerized a FastAPI service with Docker and Kubernetes that handled 200+ asynchronous reqs/sec at <300 ms latency for model training, visualization, and analysis, with load balancing and automated scaling',
@@ -35,7 +35,7 @@ const Experience = () => {
       company: 'Ushur',
       type: 'Full-time',
       location: 'Bengaluru, Karnataka',
-      duration: 'Jan 2020 - Dec 2024',
+      duration: 'Jul 2020 - Jun 2023',
       description: [
         'Built and deployed 10+ production classification and extraction pipelines integrating feature selection and regularization algorithms, improving accuracy by 15-20% on noisy datasets',
         'Created a visualization dashboard with 15+ automated charts, improving data observability and saving 3 weeks of engineering effort per release cycle',

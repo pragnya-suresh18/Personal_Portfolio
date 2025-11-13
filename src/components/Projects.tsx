@@ -9,13 +9,13 @@ const Projects = () => {
   const projects = [
     {
       title: 'AutoCloud Navigator',
-      description: 'Built an intelligent, multi-agent AWS assistant using Strands Agent, Amazon Q Developer CLI (custom agents), and Bedrock AgentCore Gateway to enable natural-language troubleshooting, real-time diagnostics, and automated optimization across CloudWatch, Lambda, and RDS.',
+      description: 'Built an intelligent, multi-agent AWS assistant using Strands Agent, Amazon Q Developer CLI (custom agents), and Bedrock AgentCore Gateway to enable natural-language queries across logs, metrics, and resource health to accelerate cloud diagnostics.',
       image: '/api/placeholder/400/250',
-      technologies: ['Strands Agent', 'Amazon Q CLI', 'Bedrock AgentCore Gateway', 'AWS', 'CloudWatch', 'Lambda', 'RDS', 'FastAPI', 'Next.js', 'Vercel'],
+      technologies: ['AWS Strands Agent', 'Amazon Q CLI', 'Bedrock AgentCore Gateway', 'AWS', 'AWS CloudWatch', 'Lambda', 'Python', 'FastAPI'],
       liveUrl: '#',
       githubUrl: '#',
       featured: true,
-      highlights: ['Multi-agent architecture with domain-specific agents', 'Natural language troubleshooting interface', 'Real-time diagnostics and automated optimization', 'Safe remediation with guardrails (dry-run + approval)', 'Clean web UI + CLI for seamless interaction']
+      highlights: ['Multi-agent architecture with domain-specific agents', 'Natural language troubleshooting interface', 'Real-time diagnostics and automated optimization', 'Safe remediation with guardrails (dry-run + approval)', 'Designed full pipeline: query parsing → retrieval-augmented reasoning → action execution']
     },
     {
       title: 'Artist Search & Discovery Platform',
@@ -114,7 +114,7 @@ const Projects = () => {
                     </Button> */}
                   </div>
                 </div>
-                
+
                 <CardHeader>
                   <div className="flex items-center justify-between">
                     <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
@@ -122,7 +122,7 @@ const Projects = () => {
                   </div>
                   <CardDescription>{project.description}</CardDescription>
                 </CardHeader>
-                
+
                 <CardContent>
                   {project.highlights && (
                     <div className="mb-4">
