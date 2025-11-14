@@ -1,5 +1,6 @@
 import { ArrowDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import professionalHeadshot from '@/assets/professional_headshot.jpeg';
 
 const Hero = () => {
   const scrollToSection = (sectionId: string) => {
@@ -18,6 +19,17 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="max-w-4xl mx-auto animate-fade-in-up pt-20">
+          {/* Profile Photo */}
+          <div className="mb-8 animate-fade-in flex justify-center" style={{ animationDelay: '0.1s' }}>
+            <div className="relative w-48 h-48 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl hover:scale-105 transition-transform duration-300">
+              <img 
+                src={professionalHeadshot} 
+                alt="Pragnya Suresh - Professional headshot" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           {/* Greeting */}
           <p className="text-lg text-muted-foreground mb-4 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Hello, I'm
