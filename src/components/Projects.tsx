@@ -71,6 +71,57 @@ const Projects = () => {
 
   const featuredProjects = projects.filter(project => project.featured);
 
+  const githubProjects = [
+    {
+      title: 'Artsy Artist Explorer',
+      description: 'Full-stack application for exploring artists using the Artsy API',
+      githubUrl: 'https://github.com/pragnya-suresh18/Full-Stack-Projects/tree/main/Artsy-Artist-Explorer',
+      technologies: ['Angular', 'Node.js', 'Artsy API']
+    },
+    {
+      title: 'Artsy Mobile Insight',
+      description: 'Mobile insights and analytics for Artsy platform',
+      githubUrl: 'https://github.com/pragnya-suresh18/Full-Stack-Projects/tree/main/Artsy-Mobile-Insight',
+      technologies: ['Mobile', 'Analytics']
+    },
+    {
+      title: 'FileSystem Implementation',
+      description: 'Custom file system implementation with advanced features',
+      githubUrl: 'https://github.com/pragnya-suresh18/FileSystem',
+      technologies: ['System Programming', 'C/C++']
+    },
+    {
+      title: 'SelfielessActs',
+      description: 'Platform for tracking and promoting selfless acts in the community',
+      githubUrl: 'https://github.com/pragnya-suresh18/SelfielessActs',
+      technologies: ['Web Development', 'Social Impact']
+    },
+    {
+      title: 'NER for Customer Support',
+      description: 'Named Entity Recognition system for automated customer support',
+      githubUrl: 'https://github.com/pragnya-suresh18/NER-for-Customer-Support',
+      technologies: ['NLP', 'Machine Learning', 'Python']
+    },
+    {
+      title: 'EMOBOT',
+      description: 'Emotion-aware chatbot with sentiment analysis capabilities',
+      githubUrl: 'https://github.com/pragnya-suresh18/EMOBOT',
+      technologies: ['NLP', 'Sentiment Analysis', 'Chatbot']
+    },
+    {
+      title: 'Stroke Prediction Demo',
+      description: 'Machine learning model for predicting stroke risk',
+      githubUrl: 'https://github.com/pragnya-suresh18/Stroke-Prediction-demo/',
+      technologies: ['Machine Learning', 'Healthcare', 'Python']
+    },
+    {
+      title: 'Big Integer Library',
+      description: 'Custom implementation of arbitrary-precision integer arithmetic',
+      githubUrl: 'https://github.com/pragnya-suresh18/Big-Integer-Library',
+      technologies: ['C++', 'Data Structures', 'Algorithms']
+    }
+  ];
+
   return (
     <section id="projects" className="py-20 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-6">
@@ -147,6 +198,45 @@ const Projects = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* GitHub Projects Section */}
+          <div className="mt-20">
+            <div className="text-center mb-12">
+              <h3 className="text-3xl md:text-4xl font-bold mb-4 hero-text">
+                More Projects
+              </h3>
+              <p className="text-muted-foreground">
+                Explore more of my work on GitHub
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {githubProjects.map((project, index) => (
+                <Card key={index} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm group">
+                  <CardHeader>
+                    <div className="flex items-start justify-between">
+                      <CardTitle className="text-lg">{project.title}</CardTitle>
+                      <Button variant="ghost" size="icon" className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" asChild>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                          <Github className="h-5 w-5" />
+                        </a>
+                      </Button>
+                    </div>
+                    <CardDescription className="text-sm">{project.description}</CardDescription>
+                  </CardHeader>
+                  <CardContent>
+                    <div className="flex flex-wrap gap-2">
+                      {project.technologies.map((tech, i) => (
+                        <span key={i} className="tech-tag text-xs">
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
           </div>
         </div>
       </div>
