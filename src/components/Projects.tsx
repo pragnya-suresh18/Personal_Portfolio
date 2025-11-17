@@ -76,49 +76,49 @@ const Projects = () => {
       title: 'Artsy Artist Explorer',
       description: 'Full-stack application for exploring artists using the Artsy API',
       githubUrl: 'https://github.com/pragnya-suresh18/Full-Stack-Projects/tree/main/Artsy-Artist-Explorer',
-      technologies: ['Angular', 'Node.js', 'Artsy API']
+      technologies: ['Angular', 'Node.js', 'Express', 'TypeScript', 'Artsy API', 'REST API']
     },
     {
       title: 'Artsy Mobile Insight',
-      description: 'Mobile insights and analytics for Artsy platform',
+      description: 'Mobile analytics application for the Artsy platform',
       githubUrl: 'https://github.com/pragnya-suresh18/Full-Stack-Projects/tree/main/Artsy-Mobile-Insight',
-      technologies: ['Mobile', 'Analytics']
+      technologies: ['Android', 'Java', 'Artsy API', 'Mobile Development']
     },
     {
       title: 'FileSystem Implementation',
       description: 'Custom file system implementation with advanced features',
       githubUrl: 'https://github.com/pragnya-suresh18/FileSystem',
-      technologies: ['System Programming', 'C/C++']
+      technologies: ['C', 'System Programming', 'File Systems', 'OS Concepts']
     },
     {
       title: 'SelfielessActs',
-      description: 'Platform for tracking and promoting selfless acts in the community',
+      description: 'Scalable cloud platform with load balancing and auto-scaling for community service tracking',
       githubUrl: 'https://github.com/pragnya-suresh18/SelfielessActs',
-      technologies: ['Web Development', 'Social Impact']
+      technologies: ['AWS', 'EC2', 'ELB', 'Auto Scaling', 'RDS', 'Cloud Computing']
     },
     {
       title: 'NER for Customer Support',
       description: 'Named Entity Recognition system for automated customer support',
       githubUrl: 'https://github.com/pragnya-suresh18/NER-for-Customer-Support',
-      technologies: ['NLP', 'Machine Learning', 'Python']
+      technologies: ['Python', 'NLP', 'spaCy', 'NER', 'Machine Learning']
     },
     {
       title: 'EMOBOT',
       description: 'Emotion-aware chatbot with sentiment analysis capabilities',
       githubUrl: 'https://github.com/pragnya-suresh18/EMOBOT',
-      technologies: ['NLP', 'Sentiment Analysis', 'Chatbot']
+      technologies: ['Python', 'NLP', 'Deep Learning', 'LSTM', 'Sentiment Analysis']
     },
     {
       title: 'Stroke Prediction Demo',
-      description: 'Machine learning model for predicting stroke risk',
+      description: 'Machine learning model for predicting stroke risk with web interface',
       githubUrl: 'https://github.com/pragnya-suresh18/Stroke-Prediction-demo/',
-      technologies: ['Machine Learning', 'Healthcare', 'Python']
+      technologies: ['Python', 'Scikit-learn', 'Flask', 'Machine Learning', 'Healthcare AI']
     },
     {
       title: 'Big Integer Library',
       description: 'Custom implementation of arbitrary-precision integer arithmetic',
       githubUrl: 'https://github.com/pragnya-suresh18/Big-Integer-Library',
-      technologies: ['C++', 'Data Structures', 'Algorithms']
+      technologies: ['C', 'Data Structures', 'Algorithms', 'Memory Management']
     }
   ];
 
