@@ -123,31 +123,31 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 bg-gradient-to-b from-background to-muted/20">
+    <section id="projects" className="py-12 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 hero-text">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 hero-text">
               Featured Projects
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               A showcase of my recent work and side projects
             </p>
           </div>
 
           {/* Featured Projects */}
-          <div className="grid md:grid-cols-2 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 gap-6 mb-8">
             {featuredProjects.map((project, index) => (
               <Card key={index} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden group">
                 <div className="relative overflow-hidden">
-                  <div className="w-full h-48 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
+                  <div className="w-full h-40 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
                     {project.title === 'AutoCloud Navigator' ? (
-                      <img src={awsLogo} alt="AWS Logo" className="h-16 w-auto opacity-70" />
+                      <img src={awsLogo} alt="AWS Logo" className="h-14 w-auto opacity-70" />
                     ) : project.title === 'Artist Search & Discovery Platform' ? (
-                      <img src={artsyLogo} alt="Artsy Logo" className="h-16 w-auto opacity-70" />
+                      <img src={artsyLogo} alt="Artsy Logo" className="h-14 w-auto opacity-70" />
                     ) : (
-                      <span className="text-6xl opacity-30">🚀</span>
+                      <span className="text-5xl opacity-30">🚀</span>
                     )}
                   </div>
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
@@ -166,29 +166,29 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <CardHeader>
+                <CardHeader className="pb-3">
                   <div className="flex items-center justify-between">
-                    <CardTitle className="text-xl font-semibold">{project.title}</CardTitle>
-                    <Badge variant="secondary">Featured</Badge>
+                    <CardTitle className="text-lg font-semibold">{project.title}</CardTitle>
+                    <Badge variant="secondary" className="text-xs">Featured</Badge>
                   </div>
-                  <CardDescription>{project.description}</CardDescription>
+                  <CardDescription className="text-sm">{project.description}</CardDescription>
                 </CardHeader>
 
-                <CardContent>
+                <CardContent className="pt-0">
                   {project.highlights && (
-                    <div className="mb-4">
-                      <h4 className="text-sm font-semibold mb-2 text-foreground">Key Achievements:</h4>
-                      <ul className="text-xs text-muted-foreground space-y-1">
+                    <div className="mb-3">
+                      <h4 className="text-xs font-semibold mb-1.5 text-foreground">Key Achievements:</h4>
+                      <ul className="text-xs text-muted-foreground space-y-0.5">
                         {project.highlights.map((highlight, idx) => (
                           <li key={idx} className="flex items-center gap-2">
-                            <div className="w-1 h-1 bg-primary rounded-full"></div>
+                            <div className="w-1 h-1 bg-primary rounded-full shrink-0"></div>
                             {highlight}
                           </li>
                         ))}
                       </ul>
                     </div>
                   )}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-1.5">
                     {project.technologies.map((tech, techIndex) => (
                       <span key={techIndex} className="tech-tag text-xs">
                         {tech}
@@ -201,32 +201,32 @@ const Projects = () => {
           </div>
 
           {/* GitHub Projects Section */}
-          <div className="mt-20">
-            <div className="text-center mb-12">
-              <h3 className="text-3xl md:text-4xl font-bold mb-4 hero-text">
+          <div className="mt-8">
+            <div className="text-center mb-6">
+              <h3 className="text-2xl md:text-3xl font-bold mb-2 hero-text">
                 More Projects
               </h3>
-              <p className="text-muted-foreground">
+              <p className="text-sm text-muted-foreground">
                 Explore more of my work on GitHub
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {githubProjects.map((project, index) => (
                 <Card key={index} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm group">
-                  <CardHeader>
+                  <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
-                      <CardTitle className="text-lg">{project.title}</CardTitle>
-                      <Button variant="ghost" size="icon" className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity" asChild>
+                      <CardTitle className="text-base">{project.title}</CardTitle>
+                      <Button variant="ghost" size="icon" className="shrink-0 opacity-70 group-hover:opacity-100 transition-opacity h-8 w-8" asChild>
                         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                          <Github className="h-5 w-5" />
+                          <Github className="h-4 w-4" />
                         </a>
                       </Button>
                     </div>
-                    <CardDescription className="text-sm">{project.description}</CardDescription>
+                    <CardDescription className="text-xs">{project.description}</CardDescription>
                   </CardHeader>
-                  <CardContent>
-                    <div className="flex flex-wrap gap-2">
+                  <CardContent className="pt-0">
+                    <div className="flex flex-wrap gap-1.5">
                       {project.technologies.map((tech, i) => (
                         <span key={i} className="tech-tag text-xs">
                           {tech}
