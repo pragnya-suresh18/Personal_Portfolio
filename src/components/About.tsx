@@ -5,18 +5,18 @@ const About = () => {
   const highlights = [
     {
       icon: Code2,
-      title: 'ML & AI Expertise',
-      description: 'Building scalable ML systems with LLM fine-tuning, RAG pipelines, and advanced NLP techniques.'
+      title: 'AI & Software Engineering',
+      description: 'Building intelligent systems with LLMs, RAG pipelines, and multi-agent architectures. Strong foundation in full-stack development and API design.'
     },
     {
       icon: Palette,
-      title: 'MLOps & Deployment',
-      description: 'End-to-end ML lifecycle management with Docker, Kubernetes, and cloud platforms (AWS, GCP).'
+      title: 'Distributed Systems & Cloud',
+      description: 'Designing scalable microservices and cloud infrastructure with Docker, Kubernetes, AWS, and GCP. Experience with load balancing and auto-scaling architectures.'
     },
     {
       icon: Zap,
-      title: 'Research & Innovation',
-      description: 'Published research in multimodal emotion recognition.'
+      title: 'Research & Systems Programming',
+      description: 'Published research in multimodal emotion recognition. Systems-level programming experience with performance-critical implementations.'
     }
   ];
 
