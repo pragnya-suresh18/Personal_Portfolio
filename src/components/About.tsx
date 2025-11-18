@@ -37,10 +37,6 @@ const About = () => {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Personal Story */}
             <div className="space-y-6">
-              <h3 className="text-2xl font-semibold text-foreground">
-                Transforming Ideas into AI-Powered Solutions
-              </h3>
-              
               <div className="space-y-4 text-muted-foreground">
                 <p>
                   I'm currently pursuing my Master's in Computer Science at USC (GPA: 3.9/4.0). My academic work centers on artificial intelligence, distributed systems, and the engineering required to turn complex model behavior into reliable, end-to-end intelligent applications. I'm especially interested in how language models interact with retrieval systems and agents, and how these components can be designed to work together in a stable, interpretable way.
