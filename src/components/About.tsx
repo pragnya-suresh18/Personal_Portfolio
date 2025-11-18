@@ -15,8 +15,8 @@ const About = () => {
     },
     {
       icon: Zap,
-      title: 'Research & Systems Programming',
-      description: 'Published research in multimodal emotion recognition. Systems-level programming experience with performance-critical implementations.'
+      title: 'Research & Innovation',
+      description: 'Published work in multimodal emotion recognition. Experience building multi-agent systems and optimizing retrieval pipelines through empirical testing and iterative improvements.'
     }
   ];
 
