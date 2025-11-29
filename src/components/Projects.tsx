@@ -151,17 +151,27 @@ const Projects = () => {
                     )}
                   </div>
                   <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-4">
-                    <Button size="sm" className="glow-effect" asChild>
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                        <ExternalLink className="h-4 w-4 mr-2" />
-                        Live Demo
-                      </a>
+                    <Button 
+                      size="sm" 
+                      className="glow-effect"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(project.liveUrl, '_blank', 'noopener,noreferrer');
+                      }}
+                    >
+                      <ExternalLink className="h-4 w-4 mr-2" />
+                      Live Demo
                     </Button>
-                    <Button variant="outline" size="sm" asChild>
-                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                        <Github className="h-4 w-4 mr-2" />
-                        Code
-                      </a>
+                    <Button 
+                      variant="outline" 
+                      size="sm"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        window.open(project.githubUrl, '_blank', 'noopener,noreferrer');
+                      }}
+                    >
+                      <Github className="h-4 w-4 mr-2" />
+                      Code
                     </Button>
                   </div>
                 </div>
