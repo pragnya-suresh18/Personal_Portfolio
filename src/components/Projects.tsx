@@ -12,7 +12,7 @@ const Projects = () => {
       description: 'AI-powered incident detection and root cause analysis system that automates production issue investigation in AWS environments. Multi-agent system that monitors CloudWatch, detects incidents, and provides actionable root cause analysis with recommendations.',
       image: '/api/placeholder/400/250',
       technologies: ['AWS Lambda', 'Strands Agents', 'Ollama', 'Llama 3.1', 'Streamlit', 'CloudWatch', 'Python', 'boto3'],
-      liveUrl: 'https://youtu.be/8-itfsCbIWY',
+      liveUrl: 'https://www.youtube.com/watch?v=8-itfsCbIWY',
       githubUrl: 'https://github.com/AWS-VibeCoding-Hackathon/AWS_On-Call_Triage_Agent',
       featured: true,
       highlights: ['97% token reduction (45,950→3,500) through intelligent preprocessing', '3 specialized AI agents for metrics, logs, and root cause analysis', 'Privacy-first design with local LLM - data never leaves your network', 'Real-time Streamlit dashboard with severity filtering', 'Built for AWS VibeCoding (Kiro) Hackathon']
