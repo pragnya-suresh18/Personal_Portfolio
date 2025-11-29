@@ -8,14 +8,14 @@ import artsyLogo from '@/assets/logos/artsy.svg';
 const Projects = () => {
   const projects = [
     {
-      title: 'AutoCloud Navigator',
-      description: 'Built an intelligent, multi-agent AWS assistant using Strands Agent, Amazon Q Developer CLI (custom agents), and Bedrock AgentCore Gateway to enable natural-language queries across logs, metrics, and resource health to accelerate cloud diagnostics.',
+      title: 'AWS On-Call Triage Agent',
+      description: 'AI-powered incident detection and root cause analysis system that automates production issue investigation in AWS environments. Multi-agent system that monitors CloudWatch, detects incidents, and provides actionable root cause analysis with recommendations.',
       image: '/api/placeholder/400/250',
-      technologies: ['AWS Strands Agent', 'Amazon Q CLI', 'Bedrock AgentCore Gateway', 'AWS', 'AWS CloudWatch', 'Lambda', 'Python', 'FastAPI'],
-      liveUrl: '#',
-      githubUrl: '#',
+      technologies: ['AWS Lambda', 'Strands Agents', 'Ollama', 'Llama 3.1', 'Streamlit', 'CloudWatch', 'Python', 'boto3'],
+      liveUrl: 'https://youtu.be/8-itfsCbIWY',
+      githubUrl: 'https://github.com/AWS-VibeCoding-Hackathon/AWS_On-Call_Triage_Agent',
       featured: true,
-      highlights: ['Multi-agent architecture with domain-specific agents', 'Natural language troubleshooting interface', 'Real-time diagnostics and automated optimization', 'Safe remediation with guardrails (dry-run + approval)', 'Designed full pipeline: query parsing → retrieval-augmented reasoning → action execution']
+      highlights: ['97% token reduction (45,950→3,500) through intelligent preprocessing', '3 specialized AI agents for metrics, logs, and root cause analysis', 'Privacy-first design with local LLM - data never leaves your network', 'Real-time Streamlit dashboard with severity filtering', 'Built for AWS VibeCoding (Kiro) Hackathon']
     },
     {
       title: 'Artist Search & Discovery Platform',
@@ -142,7 +142,7 @@ const Projects = () => {
               <Card key={index} className="card-hover border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden group">
                 <div className="relative overflow-hidden">
                   <div className="w-full h-40 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                    {project.title === 'AutoCloud Navigator' ? (
+                    {project.title === 'AWS On-Call Triage Agent' ? (
                       <img src={awsLogo} alt="AWS Logo" className="h-14 w-auto opacity-70" />
                     ) : project.title === 'Artist Search & Discovery Platform' ? (
                       <img src={artsyLogo} alt="Artsy Logo" className="h-14 w-auto opacity-70" />
@@ -157,12 +157,12 @@ const Projects = () => {
                         Live Demo
                       </a>
                     </Button>
-                    {/* <Button variant="outline" size="sm" asChild>
+                    <Button variant="outline" size="sm" asChild>
                       <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                         <Github className="h-4 w-4 mr-2" />
                         Code
                       </a>
-                    </Button> */}
+                    </Button>
                   </div>
                 </div>
 
